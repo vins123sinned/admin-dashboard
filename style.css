@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: bisque;
+    grid-row: 1 / -1;
+}
+
+.header {
+    background-color: magenta;
+}
+
+.main-content {
+    background-color: blueviolet;
+}
