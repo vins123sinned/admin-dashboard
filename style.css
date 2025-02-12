@@ -189,8 +189,7 @@ p, h1, h2, h3, h4 {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #CCC9DC;
     padding: 1rem;
 }
@@ -203,6 +202,7 @@ p, h1, h2, h3, h4 {
 
 .overview-container {
     grid-row: 1 / 3;
+    overflow: auto;
 }
 
 .cards-container {
@@ -250,6 +250,11 @@ p, h1, h2, h3, h4 {
     width: 1.5rem;
 }
 
+.announcement-trending {
+    grid-row: 1 / -1;
+    overflow: scroll;
+}
+
 .announcement-container {
     font-size: 0.75rem;
 }
@@ -275,6 +280,10 @@ p, h1, h2, h3, h4 {
 
 .announcement-header.first {
     margin-top: 0;
+}
+
+.main-content-heading.trending {
+    margin-top: 1rem;
 }
 
 .profile-box {
@@ -309,3 +318,7 @@ p, h1, h2, h3, h4 {
     font-size: clamp(0.5rem, 1vw, 2.25rem);
     color: #7d7979;
 }
+
+/* 
+Finished with everything today, but here's some polishing touches:
+    Add box shadows
